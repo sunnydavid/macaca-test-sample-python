@@ -1,7 +1,17 @@
 language: python
-python: 
-  - 2.7.13
-
+sudo: false
+python:
+  - "2.7.13"
+addons:
+  apt:
+    packages:
+      - xvfb
+install:
+  - export DISPLAY=':99.0'
+  - Xvfb :99 -screen 0 1366x768x24 > /dev/null 2>&1 &
+  - nvm install v5
+  - nvm use v5
 script:
   - macaca server &
-  - python tests/macaca-android-sample.test.py
+  - sleep 5
+  - python macaca-desktop-sample.test.py
