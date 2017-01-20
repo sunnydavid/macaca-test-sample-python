@@ -1,0 +1,7 @@
+language: python
+python: 
+  - 2.7.13
+
+script:
+  - macaca server &
+  - tests/macaca-desktop-sample.test.py
