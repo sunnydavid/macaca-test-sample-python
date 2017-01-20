@@ -4,4 +4,4 @@ python:
 
 script:
   - macaca server &
-  - tests/macaca-android-sample.test.py
+  - python tests/macaca-android-sample.test.py
