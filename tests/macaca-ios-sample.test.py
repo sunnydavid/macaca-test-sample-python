@@ -38,7 +38,7 @@ class MacacaTest(unittest.TestCase):
     def test_01_login(self):
         self.driver \
             .element_by_xpath('//XCUIElementTypeTextField[1]') \
-            .send_keys('中文+Test+12345678')   \
+            .send_keys('Test+12345678')   \
 
         self.driver \
             .element_by_xpath('//XCUIElementTypeSecureTextField[1]') \
