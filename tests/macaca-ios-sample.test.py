@@ -84,7 +84,7 @@ class MacacaTest(unittest.TestCase):
 
         time.sleep(1)
 
-        driver \
+        self.driver \
             .accept_alert() \
             .back()
 
